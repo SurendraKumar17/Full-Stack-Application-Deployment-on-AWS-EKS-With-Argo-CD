@@ -38,7 +38,7 @@ variable "security_group_name" {
 
 variable "instance_name" {
   description = "The name of the EC2 instance."
-  default     = "jenkins-server"
+  default     = "jenkins_fullstack-app"
 }
 
 variable "instance_type" {
@@ -51,7 +51,7 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "The name of the SSH key pair to access the instance."
-  default     = "devsecops-project"
+  default     = "jenkins_fullstack_app"
 }
 
 # IAM Role
