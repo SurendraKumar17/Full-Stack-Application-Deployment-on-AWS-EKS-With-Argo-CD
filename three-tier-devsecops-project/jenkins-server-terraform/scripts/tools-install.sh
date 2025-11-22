@@ -31,6 +31,12 @@ sudo chmod 777 /var/run/docker.sock
 #!/bin/bash
 docker run -d  --name sonar -p 9000:9000 sonarqube:lts-community
 
+# to make it start automatically after server reboot
+ #!/bin/bash
+ #docker run -d --name sonar --restart=always -p 9000:9000 sonarqube:lts-community
+ #If already installed without restart , just $docker update --restart=always sonar
+
+
 
 # Installing AWS CLI
 #!/bin/bash
