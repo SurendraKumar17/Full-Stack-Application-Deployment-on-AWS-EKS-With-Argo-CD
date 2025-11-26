@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/SurendraKumar17/Full-Stack-Application-Deployment-on-AWS-EKS-With-Argo-CD'
+                git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/SurendraKumar17/Full-Stack-Application-Deployment-on-AWS-EKS-With-Argo-CD.git'
             }
         }
         stage('Sonarqube Analysis') {
@@ -86,7 +86,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/SurendraKumar17/Full-Stack-Application-Deployment-on-AWS-EKS-With-Argo-CD'
+                git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/SurendraKumar17/Full-Stack-Application-Deployment-on-AWS-EKS-With-Argo-CD.git'
             }
         }
         stage('Update Deployment file') {
