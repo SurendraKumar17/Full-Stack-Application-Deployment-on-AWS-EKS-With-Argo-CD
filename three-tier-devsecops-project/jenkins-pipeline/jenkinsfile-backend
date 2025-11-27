@@ -84,11 +84,6 @@ pipeline {
                 sh 'trivy image ${REPOSITORY_URI}${AWS_ECR_REPO_NAME}:${BUILD_NUMBER} > trivyimage.txt' 
             }
         }
-        stage('Checkout Code') {
-            steps {
-                git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/SurendraKumar17/Full-Stack-Application-Deployment-on-AWS-EKS-With-Argo-CD.git'
-            }
-        }
         stage('Update Deployment file') {
             environment {
                 GIT_REPO_NAME = "Full-Stack-Application-Deployment-on-AWS-EKS-With-Argo-CD"
