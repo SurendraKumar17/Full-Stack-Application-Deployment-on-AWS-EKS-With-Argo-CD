@@ -95,7 +95,7 @@ pipeline {
                 GIT_USER_NAME = "SurendraKumar17"
             }
             steps {
-                dir('kubernetes-manifests/frontend') {
+                dir('three-tier-devsecops-project/kubernetes-manifests/frontend') {
                     withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
                         // First, list the files in the directory to check if deployment.yaml exists
                         sh '''
