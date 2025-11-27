@@ -86,7 +86,7 @@ pipeline {
         }
         stage('Update Deployment file') {
             environment {
-                GIT_REPO_NAME = "Full-Stack-Application-Deployment-on-AWS-EKS-With-Argo-CD"
+                GIT_REPO_NAME = "Full-Stack-Application-Deployment-on-AWS-EKS-With-Argo-CD.git"
                 GIT_USER_NAME = "SurendraKumar17"
             }
             steps {
